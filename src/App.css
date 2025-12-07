@@ -22,16 +22,47 @@ main {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+  position: relative;
   color: white;
   padding: 6rem 2rem;
   text-align: center;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 800px;
 }
 
 .hero-content h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
   color: #d4af37;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero-content p {
@@ -40,6 +71,7 @@ main {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .cta-button {
@@ -80,10 +112,12 @@ main {
 
 .feature-card {
   background: white;
-  padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-card:hover {
@@ -91,13 +125,27 @@ main {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+.feature-image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.feature-card h3,
+.feature-card p {
+  padding: 0 2rem;
+}
+
 .feature-card h3 {
+  padding-top: 1.5rem;
   color: #d4af37;
   margin-bottom: 1rem;
   font-size: 1.3rem;
 }
 
 .feature-card p {
+  padding-bottom: 2rem;
   color: #666;
   line-height: 1.6;
 }
@@ -191,6 +239,11 @@ main {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .hero {
+    min-height: 350px;
+    padding: 3rem 1rem;
+  }
+
   .hero-content h1 {
     font-size: 2rem;
   }
@@ -211,5 +264,31 @@ main {
   .features-grid,
   .pricing-grid {
     grid-template-columns: 1fr;
+  }
+
+  .feature-image-wrapper {
+    height: 150px;
+  }
+}
+
+/* Image Optimization */
+@media (prefers-reduced-motion: reduce) {
+  .hero,
+  .feature-card,
+  .pricing-card {
+    transition: none;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .hero {
+    min-height: auto;
+    padding: 2rem;
+  }
+
+  .feature-card,
+  .pricing-card {
+    page-break-inside: avoid;
   }
 }
