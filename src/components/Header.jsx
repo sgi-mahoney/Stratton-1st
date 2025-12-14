@@ -6,9 +6,9 @@ export default function Header() {
     <header className="header">
       <div className="header-top">
         <div className="contact-bar">
-          <span>📧 Help@apexrentalguide.com</span>
-          <span>📞 678-810-8665</span>
-          <span>📍 Miami, FL</span>
+          <span>📧 help@apexrentalguide.com</span>
+          <span>📞 +1.645.234.9013</span>
+          <span>📍 Atlanta, GA 30328</span>
         </div>
       </div>
       

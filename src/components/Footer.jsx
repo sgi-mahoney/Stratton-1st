@@ -12,9 +12,10 @@ export default function Footer() {
         
         <div className="footer-section">
           <h4>Contact Us</h4>
-          <p><strong>Location:</strong> Miami, FL</p>
-          <p><strong>Email:</strong> <a href="mailto:Help@apexrentalguide.com">Help@apexrentalguide.com</a></p>
-          <p><strong>Phone:</strong> <a href="tel:678-810-8665">678-810-8665</a></p>
+          <p><strong>Business:</strong> Luxury Car Rental Guide</p>
+          <p><strong>Location:</strong> Atlanta, GA 30328</p>
+          <p><strong>Email:</strong> <a href="mailto:help@apexrentalguide.com">help@apexrentalguide.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+1.645.234.9013">+1.645.234.9013</a></p>
         </div>
         
         <div className="footer-section">
@@ -38,7 +39,7 @@ export default function Footer() {
       </div>
       
       <div className="footer-bottom">
-        <p>&copy; 2025 Stratton Apex. All rights reserved. | Located in Miami, FL</p>
+        <p>&copy; 2025 Stratton Apex. All rights reserved. | Located in Atlanta, GA 30328</p>
       </div>
     </footer>
   );

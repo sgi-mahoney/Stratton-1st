@@ -34,23 +34,23 @@ export default function ContactPage() {
       <div className="contact-container">
         <div className="contact-info">
           <div className="info-card">
+            <h3>🏛️ Business</h3>
+            <p>Luxury Car Rental Guide</p>
+          </div>
+
+          <div className="info-card">
             <h3>📍 Location</h3>
-            <p>Miami, FL</p>
+            <p>Atlanta, GA 30328</p>
           </div>
 
           <div className="info-card">
             <h3>📧 Email</h3>
-            <p><a href="mailto:Help@apexrentalguide.com">Help@apexrentalguide.com</a></p>
+            <p><a href="mailto:help@apexrentalguide.com">help@apexrentalguide.com</a></p>
           </div>
 
           <div className="info-card">
             <h3>📞 Phone</h3>
-            <p><a href="tel:678-810-8665">678-810-8665</a></p>
-          </div>
-
-          <div className="info-card">
-            <h3>🌐 Website</h3>
-            <p><a href="https://www.apexrentalguide.com">www.apexrentalguide.com</a></p>
+            <p><a href="tel:+1.645.234.9013">+1.645.234.9013</a></p>
           </div>
         </div>
 
@@ -110,7 +110,8 @@ export default function ContactPage() {
 
       <div className="contact-cta">
         <h2>Ready to Start Your Luxury Car Rental Business?</h2>
-        <p>Contact us today at <strong>Help@apexrentalguide.com</strong> or call <strong>678-810-8665</strong></p>
+        <p>Contact us today at <strong>help@apexrentalguide.com</strong> or call <strong>+1.645.234.9013</strong></p>
+        <p style={{marginTop: '0.5rem', fontSize: '0.95rem', color: '#ccc'}}>Luxury Car Rental Guide | Atlanta, GA 30328</p>
         <button className="cta-btn">Get Started</button>
       </div>
     </div>
